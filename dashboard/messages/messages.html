@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="messages.css"/>
 </head>
 <body>
-    <div class="message-Welcome">
+    <div class="top-bar">
+        <button
+            class="dashboard-button"
+            type="button"
+            onclick="window.location.href='/dashboard/dashboard.html'"
+        >
+            Dashboard
+        </button>
         <h1>Messages</h1>
     </div>
     <div class="chat-container">
@@ -29,6 +36,7 @@
         <div class="message-input">
             <input type="text" id="message-input" placeholder="Type your message here..." />
             <button type="button" onclick="sendMessage()">Send</button>
+            <div id="feedback" style="color: red; margin-top: 5px;"></div>
         </div>
     </div>
     <script src="messages.js"></script>
