@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #002073;
+  
+}
+
+.title-schedule{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; 
+    color: white;
+    text-shadow: px 5px 10px 0px rgba(255, 255, 255, 0.5);
+}
+
+.buttons-schedule{
+    display: flex;
+    flex-direction: column; 
+    
+    justify-content: center;
+    align-items: center; 
+    padding: 1rem;
+    margin: 1rem 1rem;
+    border-radius: 10px;
+    width: 16rem;
+    height: rem;
+    
+}
+
+.button-add,
+.button-edit,
+.button-remove {
+    font-size: 1.2rem;
+    margin: 4rem 0; 
+    padding: 8px 16px; 
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: rem;
+    background: #4CAF50;
+    color: antiquewhite;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.5);
+}
+.button-dashboard{
+    font-size: 1.2rem;
+    margin: 1rem 1rem; 
+    padding: 8px 16px; 
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: rem;
+    background: #4CAF50;
+    color: antiquewhite;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.5)
+}
+.button-add:hover,
+.button-edit:hover,
+.button-remove:hover {
+    background: #388E3C;
+}
