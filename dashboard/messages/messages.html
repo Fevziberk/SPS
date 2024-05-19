@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="messages.css"/>
+</head>
+<body>
+    <div class="message-Welcome">
+        <h1>Messages</h1>
+    </div>
+    <div class="chat-container">
+        <div class="chat-box">
+            <!-- Example message -->
+            <div class="message">
+                <span class="message-username">Volkan Sarı:</span>
+                <span class="message-text">Hey there, when is the deadline for the Seng project?</span>
+            </div>
+            <div class="message">
+                <span class="message-username">Fevzi Berk Çeliktaş:</span>
+                <span class="message-text">What project</span>
+            </div>
+            <div class="message">
+                <span class="message-username">Hussein Abdulkarim Hussein:</span>
+                <span class="message-text">No worries big man, you can do it</span>
+            </div>
+        </div>
+        <div class="message-input">
+            <input type="text" id="message-input" placeholder="Type your message here..." />
+            <button type="button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="messages.js"></script>
+</body>
+</html>
