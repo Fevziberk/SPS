@@ -10,24 +10,14 @@ body {
   background: #dfe9f5;
 }
 .settings-box {
+  display: flex;
+  flex-direction: column;
   width: 350px;
- 
   margin: 300px 100px;
-  
   text-align: center;
  
 }
-.login-username{
-  color: antiquewhite;
-  margin-right: 12rem;
-}
-.login-password{
-  color: antiquewhite;
-  margin-right: 12rem;
-}
-.login-p {
-  margin-bottom: 1.7rem;
-}
+
 .login-input {
   width: 80%;
   outline: none;
@@ -38,9 +28,11 @@ body {
   border-radius: 10px;
 }
 
-.login-button {
+.button-changeUsername,
+.button-changePassword,
+.button-changeMail {
   font-size: 1.2rem;
-  
+
   margin-top: 1rem;
   margin-left:6.5rem;
   padding: 8px 8px;
@@ -52,8 +44,17 @@ body {
   color: antiquewhite;
   cursor: pointer;
 }
-.login-button:hover {
+.button-changeUsername:hover,
+.button-changePassword:hover,
+.button-changeMail:hover {
   background: #388E3C;
   
+}
+
+.box-changeUsername,
+.box-changePassword,
+.box-changeMail{
+display: flex;
+ 
 }
 

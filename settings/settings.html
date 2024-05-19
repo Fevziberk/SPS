@@ -10,43 +10,66 @@
 </head>
 <body>
     <div>
+      <button
+        class="button-dashboard"
+        type="button"
+        name="dashboard"
+        onclick="window.location.href='../dashboard/dashboard.html'"
+      >
+        Dashboard
+      </button>
         <div class="settings-box">
-           <!-- <div class="login-username">Username:</div>
-            <input
-              class="login-input"
-              type="text"
-              name="username"
-              placeholder="Username"
-            />
-            <div class="login-password">Password:</div>
-            <input
-              class="login-input"
-              type="password"
-              placeholder="Password"
-            /> -->
-            <
-            <button
-              class="login-button"
+            
+            
+            
+           
+            <div class="box-changeUsername">
+              <button
+              class="button-changeUsername"
               type="button"
               
               onclick="window.location.href='./home/home.html'"
             >
               Change Username
             </button>
-            <button
-              class="login-button"
+            <input
+              class="login-input"
+              type="text"
+              name="username"
+              placeholder="Username"
+            />
+            </div>
+            <div class="box-changePassword">
+              <button
+              class="button-changePassword"
               type="button"
               onclick="window.location.href='./home/home.html'"
             >
               Change Password
             </button>
-            <button
-              class="login-button"
+            <input
+            class="login-input"
+            type="password"
+            placeholder="Password"
+          /> 
+            </div>
+            <div class="box-changeMail">
+              <button
+              class="button-changeMail"
               type="button"
               onclick="window.location.href='./home/home.html'"
             >
               Change Email
             </button>
+            <input
+            class="login-input"
+            type="password"
+            placeholder="Email"
+          /> 
+            </div>
+            
+            
+            
         </div>
     </div>
     <script src="page1.js"></script>
