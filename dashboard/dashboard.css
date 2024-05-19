@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #002073;
+}
+
+.message-Welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; 
+    color:white;
+  }
+  .layout{
+    display:flexbox;
+    background-color: black;
+    justify-content: center;
+    
+}
+.dashboard-navigate1 {
+    display:flex;
+    background-color: white;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    border-radius: 10px;
+   
+  }
+  .dashboard-navigate2 {
+    display:flex;
+    background-color: white;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    margin: 400px 100px;
+    border-radius: 10px;
+   
+  }
+
+
+
+.home-button {
+    
+  font-size: 1.2rem;
+  height: 4rem;
+  margin-right:26rem;
+  padding: 8px 8px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  height: 4rem;
+  width: 12%;
+  background: #4CAF50;
+  color: antiquewhite;
+  cursor: pointer;
+  }
+
+  .schedule-button {
+    font-size: 1.2rem;
+    height: 4rem;
+    margin-left:26rem;
+    padding: 8px 8px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 12%;
+    background: #4CAF50;
+    color: antiquewhite;
+    cursor: pointer;
+}
+  .messages-button {
+    font-size: 1.2rem;
+    
+    margin-right:26rem;
+   
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    height: 4rem;
+    width: 12%;
+    background: #4CAF50;
+    color: antiquewhite;
+    cursor: pointer;
+  }
+  .settings-button {
+    font-size: 1.2rem;
+    
+    margin-left: 26rem;
+    padding: 8px 8px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    height: 4rem;
+    width: 12%;
+    background: #4CAF50;
+    color: antiquewhite;
+    cursor: pointer;
+  }
+.announcements-button:hover,
+.account-button:hover,
+.dashboard-button:hover{
+  background: #388E3C;
+  
+}
+
