@@ -16,13 +16,13 @@
   }
   .layout{
     display:flexbox;
-    background-color: black;
+    
     justify-content: center;
     
 }
 .dashboard-navigate1 {
     display:flex;
-    background-color: white;
+    
     justify-content: center;
     padding: 1rem 0 1rem 0;
     border-radius: 10px;
@@ -30,7 +30,7 @@
   }
   .dashboard-navigate2 {
     display:flex;
-    background-color: white;
+   
     justify-content: center;
     padding: 1rem 0 1rem 0;
     margin: 400px 100px;
@@ -54,6 +54,7 @@
   background: #4CAF50;
   color: antiquewhite;
   cursor: pointer;
+  box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.5);
   }
 
   .schedule-button {
@@ -68,6 +69,7 @@
     background: #4CAF50;
     color: antiquewhite;
     cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.5);
 }
   .messages-button {
     font-size: 1.2rem;
@@ -82,6 +84,7 @@
     background: #4CAF50;
     color: antiquewhite;
     cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.5);
   }
   .settings-button {
     font-size: 1.2rem;
@@ -96,6 +99,7 @@
     background: #4CAF50;
     color: antiquewhite;
     cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.5);
   }
 .announcements-button:hover,
 .account-button:hover,
