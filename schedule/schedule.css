@@ -1,12 +1,11 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);  margin: 0;
   padding: 0;
 }
 
 .top-bar {
-  background-color: #333;
+  background-color: #113f67;
   color: white;
   padding: 15px;
   text-align: center;

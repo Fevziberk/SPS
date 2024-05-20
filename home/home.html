@@ -7,43 +7,16 @@
     <link rel="stylesheet" href="home.css"/>
 </head>
 <body>
-    <div class="message-Welcome">
-        <h1>Welcome, <span  id="username"></span>!</h1>
-    </div>
-     <div>
+    <div class="container">
+        <div class="message-welcome">
+            <h1>Welcome, <span id="username"></span>!</h1>
+        </div>
         <div class="buttons-navigate">
-            <button
-            class="account-button"
-            type="button"
-            name="account"
-            onclick="window.location.href='../main.html'"
-          >
-            Switch Account
-          </button>
-            <button
-              class="announcements-button"
-              type="button"
-              name="announcements"
-              onclick="window.location.href='./home.html'"
-            >
-              Announcements
-            </button>
-           
-          <button
-          class="dashboard-button"
-          type="button"
-          name="dashboard"
-          onclick="window.location.href='../dashboard/dashboard.html'"
-        >
-          Dashboard
-        </button>
+            <button class="account-button" type="button" name="account" onclick="window.location.href='../main.html'">Switch Account</button>
+            <button class="announcements-button" type="button" name="announcements" onclick="window.location.href='./home.html'">Announcements</button>
+            <button class="dashboard-button" type="button" name="dashboard" onclick="window.location.href='../dashboard/dashboard.html'">Dashboard</button>
         </div>
     </div>
-
-
-
-
-
     <script src="home.js"></script>
 </body>
 </html>
