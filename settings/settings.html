@@ -3,97 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPS
-
-    </title>
+    <title>SPS</title>
     <link rel="stylesheet" href="settings.css"/>
 </head>
 <body>
     <div>
-      <div class="title-settings">
-        <h1>Settings <span id="username"></span></h1>
-    </div>
-     <button
-      class="button-dashboard"
-      type="button"
-      name="dashboard"
-      onclick="window.location.href='../dashboard/dashboard.html'"
-    >
-      Dashboard
-    </button>
-        <div class="settings-box">
-            
-            <div class="box-changeUsername">
-              <button
-              class="button-changeUsername"
-              type="button"
-              
-              
-            >
-              Change Username
-            </button>
-            <input
-              class="input-fields"
-              type="text"
-              name="username"
-              placeholder="Username"
-            /><button
-            class="button-submit"
+        <div class="title-settings">
+            <h1>Settings <span id="usernameDisplay"></span></h1>
+        </div>
+        <button
+            class="button-dashboard"
             type="button"
-            
-            
-          >
-            Submit
-          </button>
-            
+            name="dashboard"
+            onclick="window.location.href='../dashboard/dashboard.html'"
+        >
+            Dashboard
+        </button>
+        <div class="settings-box">
+            <div class="box-changeUsername">
+                <button
+                    class="button-changeUsername"
+                    type="button"
+                    onclick="toggleVisibility('username')"
+                >
+                    Change Username
+                </button>
+                <input
+                    id="usernameInput"
+                    class="input-fields"
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    style="display: none;"
+                />
+                <button
+                    id="submitUsername"
+                    class="button-submit"
+                    type="button"
+                    onclick="changeUsername()"
+                    style="display: none;"
+                >
+                    Submit
+                </button>
             </div>
             <div class="box-changePassword">
-              <button
-              class="button-changePassword"
-              type="button"
-              
-            >
-              Change Password
-            </button>
-            <input
-            class="input-fields"
-            type="password"
-            placeholder="Password"
-          /> <button
-          class="button-submit"
-          type="button"
-          
-          
-        >
-        Submit
-        </button>
+                <button
+                    class="button-changePassword"
+                    type="button"
+                    onclick="toggleVisibility('password')"
+                >
+                    Change Password
+                </button>
+                <input
+                    id="passwordInput"
+                    class="input-fields"
+                    type="password"
+                    placeholder="Password"
+                    style="display: none;"
+                />
+                <button
+                    id="submitPassword"
+                    class="button-submit"
+                    type="button"
+                    onclick="changePassword()"
+                    style="display: none;"
+                >
+                    Submit
+                </button>
             </div>
             <div class="box-changeMail">
-              <button
-              class="button-changeMail"
-              type="button"
-              
-            >
-              Change Email
-            </button>
-            <input
-            class="input-fields"
-            type="password"
-            placeholder="Email"
-          /> 
-          <button
-          class="button-submit"
-          type="button"
-          
-          
-        >
-        Submit
-        </button>
+                <button
+                    class="button-changeMail"
+                    type="button"
+                    onclick="toggleVisibility('mail')"
+                >
+                    Change Email
+                </button>
+                <input
+                    id="mailInput"
+                    class="input-fields"
+                    type="text"
+                    placeholder="Email"
+                    style="display: none;"
+                />
+                <button
+                    id="submitMail"
+                    class="button-submit"
+                    type="button"
+                    onclick="changeMail()"
+                    style="display: none;"
+                >
+                    Submit
+                </button>
             </div>
-            
-          </div>
-        
+        </div>
     </div>
-    
+    <div class="contact-us-box" onclick="sendNotification()">Contact Us</div>
+
+<script src="page1.js"></script>
+<script>
+  function sendNotification() {
+    alert("Notification sent");
+  }
+</script>
+</body>
+</html>
+
+    <script src="settings.js"></script>
 </body>
 </html>

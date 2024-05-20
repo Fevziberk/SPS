@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,99 +7,92 @@
   font-family: "Poppins", sans-serif;
   background-color: #002073;
 }
-.title-settings{
+
+.title-settings {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem; 
   color: white;
-  text-shadow: px 5px 10px 0px rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
 }
+
 .settings-box {
   display: flex;
   flex-direction: column;
-  width: 900px;
-  margin: 100px; 
+  width: 500px;
+  margin: 100px auto; /* Center the settings box horizontally */
   text-align: center;
   height: auto;
-
   padding: 20px;
+  
  
 }
 
 .input-fields {
   width: 80%;
-  height: 80%;
   outline: none;
   border: none;
   background: antiquewhite;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
-  margin-right:6.5rem;
-
   padding: 12px 14px;
+  margin: 20px 0; /* Spacing between elements */
   border-radius: 10px;
-  box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.button-submit{
-  font-size: 1.2rem;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
-  margin-right:6.5rem;
-  padding: 8px 8px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  width: 50%;
-  height:80%;
-  background: #4CAF50;
-  color: antiquewhite;
-  cursor: pointer;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+.hidden {
+  display: none;
 }
+
+.button-submit,
 .button-changeUsername,
-.button-changePassword,
-.button-changeMail {
+ .button-changePassword,
+  .button-changeMail,
+   .button-dashboard {
   font-size: 1.2rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  margin-right:6.5rem;
-  padding: 8px 8px;
+  margin: 20px 0; 
+  padding: 10px 16px; 
   border-radius: 5px;
   outline: none;
   border: none;
-  width: 50%;
   background: #4CAF50;
   color: antiquewhite;
   cursor: pointer;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.button-changeUsername:hover,
-.button-changePassword:hover,
-.button-changeMail:hover, 
-.button-dashboard:hover{
-  background: #388E3C;
-  
-}
-
-.box-changeUsername,
-.box-changePassword,
-.box-changeMail{
-display: flex;
-margin: rem;
- 
-}
-
 .button-dashboard{
-  font-size: 1.2rem;
-  margin: 1rem 1rem; 
-  padding: 8px 16px; 
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  width: rem;
-  background: #4CAF50;
+  margin-left: 4rem;;
+}
+.button-submit:hover,
+.button-changeUsername:hover, 
+.button-changePassword:hover,
+ .button-changeMail:hover,
+  .button-dashboard:hover {
+  background: #388E3C;
+}
+
+.box-changeUsername, 
+.box-changePassword,
+ .box-changeMail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Added margin-bottom for spacing between boxes */
+}
+.contact-us-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
   color: antiquewhite;
-  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 1000;
+}
+
+.contact-us-box:hover {
+  background: #388E3C;
 }
