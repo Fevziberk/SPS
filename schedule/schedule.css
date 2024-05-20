@@ -1,129 +1,96 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
-* {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  background-color: #002073;
 }
 
 .top-bar {
-  display: flex;
-  align-items: center;
-  
-  background-color: #4CAF50;
+  background-color: #333;
   color: white;
-  padding: 10px 20px;
+  padding: 15px;
+  text-align: center;
 }
-
-.top-bar h1 {
-  margin-left: 16rem;
-  font-size: 24px;
-  background-color: #4CAF50;
-}
-
-.button-dashboard {
-  
-  font-size: 1.2rem;
-  height: 4rem;
-  margin-right:26rem;
-  padding: 8px 8px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  height: 4rem;
-  width: 12%;
-  background: #4CAF50;
-  color: antiquewhite;
-  cursor: pointer;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
-  }
 
 .content {
   display: flex;
+  margin: 20px;
 }
 
 .left-panel {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.right-panel {
-  flex: 2;
-  padding: 1rem;
+  padding: 10px;
 }
 
 .buttons-schedule {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  margin: 1rem 1rem;
-  border-radius: 10px;
-  width: 16rem;
+  gap: 10px;
 }
 
-.button-add,
-.button-edit,
-.button-remove{
-  font-size: 1.2rem;
-  margin: 1rem 0;
-  padding: 8px 16px;
-  border-radius: 5px;
-  outline: none;
+button {
+  padding: 10px;
+  font-size: 16px;
   border: none;
-  background: #4CAF50;
-  color: antiquewhite;
+  border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-.button-add:hover,
-.button-edit:hover,
-.button-remove:hover,
-.button-dashboard:hover {
-  background: #388E3C;
+.button-add {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button-edit {
+  background-color: #2196F3;
+  color: white;
+}
+
+.button-remove {
+  background-color: #f44336;
+  color: white;
 }
 
 .add-task-fields {
   display: none;
   flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .add-task-fields input,
-.add-task-fields select {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  width: 14rem;
-  border-radius: 5px;
+.add-task-fields select,
+.add-task-fields button {
+  padding: 10px;
+  font-size: 16px;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .add-task-fields button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
   border: none;
-  background: #4CAF50;
-  color: antiquewhite;
-  cursor: pointer;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.right-panel {
+  flex: 3;
+  padding: 10px;
 }
 
 .task-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
 .task-item {
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 10px;
   color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#remove-task-message {
+  margin-top: 10px;
 }
