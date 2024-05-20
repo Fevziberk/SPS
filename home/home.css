@@ -16,7 +16,7 @@
   }
 .buttons-navigate {
     display:flex;
-    background-color: white;
+    
     justify-content: center;
     padding: 1rem 0 1rem 0;
     margin: 200px 100px;
@@ -43,6 +43,7 @@
   background: #4CAF50;
   color: antiquewhite;
   cursor: pointer;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   }
 
   .announcements-button {
@@ -58,6 +59,7 @@
     background: #4CAF50;
     color: antiquewhite;
     cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
   .dashboard-button {
     font-size: 1.2rem;
@@ -73,6 +75,7 @@
     background: #4CAF50;
     color: antiquewhite;
     cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   }
 .announcements-button:hover,
 .account-button:hover,

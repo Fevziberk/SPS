@@ -14,7 +14,7 @@
     align-items: center;
     margin-bottom: 2rem; 
     color: white;
-    text-shadow: px 5px 10px 0px rgba(255, 255, 255, 0.5);
+    
 }
 
 .buttons-schedule{
@@ -44,7 +44,7 @@
     background: #4CAF50;
     color: antiquewhite;
     cursor: pointer;
-    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
 }
 .button-dashboard{
     font-size: 1.2rem;
@@ -57,10 +57,11 @@
     background: #4CAF50;
     color: antiquewhite;
     cursor: pointer;
-    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.5)
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
 }
 .button-add:hover,
 .button-edit:hover,
-.button-remove:hover {
+.button-remove:hover,
+.button-dashboard:hover {
     background: #388E3C;
 }
