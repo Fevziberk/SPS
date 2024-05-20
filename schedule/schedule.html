@@ -4,86 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule</title>
-    <link rel="stylesheet" href="schedule.css"/>
+    <link rel="stylesheet" href="schedule.css">
 </head>
 <body>
-    <div class="title-schedule">
+    <div class="top-bar">
+        <button
+            class="button-dashboard"
+            type="button"
+            onclick="window.location.href='/dashboard/dashboard.html'"
+        >
+            Dashboard
+        </button>
         <h1>Schedule</h1>
-    </div> 
+    </div>
+
     <div class="content">
         <div class="left-panel">
-            <button
-                class="button-dashboard"
-                type="button"
-                name="dashboard"
-                onclick="window.location.href='../dashboard/dashboard.html'"
-            >
-                Dashboard
-            </button>
+            
+
             <div class="buttons-schedule">
-                <button
-                    class="button-add"
-                    type="button"
-                    onclick="showAddTaskFields()"
-                >
+                <button class="button-add" type="button" onclick="showAddTaskFields()">
                     Add Task
                 </button>
-                <button
-                    class="button-edit"
-                    type="button"
-                >
+                <button class="button-edit" type="button">
                     Edit Task
                 </button>
-                <button
-                    class="button-remove"
-                    type="button"
-                >
+                <button class="button-remove" type="button">
                     Remove Task
                 </button>
             </div>
+
             <div class="add-task-fields" id="add-task-fields">
-              <select id="start-hour">
-                  <option value="">Select Start Hour</option>
-                  <option value="09:00">9:00 AM</option>
-                  <option value="10:00">10:00 AM</option>
-                  <option value="11:00">11:00 AM</option>
-                  <option value="12:00">12:00 PM</option>
-                  <option value="13:00">1:00 PM</option>
-                  <option value="14:00">2:00 PM</option>
-                  <option value="15:00">3:00 PM</option>
-                  <option value="16:00">4:00 PM</option>
-                  <option value="17:00">5:00 PM</option>
-              </select>
-              <select id="end-hour">
-                  <option value="">Select End Hour</option>
-                  <option value="10:00">10:00 AM</option>
-                  <option value="11:00">11:00 AM</option>
-                  <option value="12:00">12:00 PM</option>
-                  <option value="13:00">1:00 PM</option>
-                  <option value="14:00">2:00 PM</option>
-                  <option value="15:00">3:00 PM</option>
-                  <option value="16:00">4:00 PM</option>
-                  <option value="17:00">5:00 PM</option>
-                  <option value="18:00">6:00 PM</option>
-              </select>
-              <input type="text" id="student-name" placeholder="Student Name">
-              <input type="text" id="course-name" placeholder="Course Name">
-              <input type="text" id="description" placeholder="Description">
-              <input type="color" id="color">
-              <select id="day-of-week">
-                  <option value="">Select Day of Week</option>
-                  <option value="Monday">Monday</option>
-                  <option value="Tuesday">Tuesday</option>
-                  <option value="Wednesday">Wednesday</option>
-                  <option value="Thursday">Thursday</option>
-                  <option value="Friday">Friday</option>
-              </select>
-              <button onclick="addTask()">Add Task</button>
-          </div>
+                <select id="start-hour">
+                    <option value="">Select Start Hour</option>
+                    <option value="09:00">9:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                </select>
+                <select id="end-hour">
+                    <option value="">Select End Hour</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                </select>
+                <input type="text" id="student-name" placeholder="Student Name">
+                <input type="text" id="course-name" placeholder="Course Name">
+                <input type="text" id="description" placeholder="Description">
+                <input type="color" id="color">
+                <select id="day-of-week">
+                    <option value="">Select Day of Week</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                </select>
+                <button onclick="addTask()">Add Task</button>
+            </div>
         </div>
+
         <div class="right-panel">
-            <div id="task-grid" class="task-grid">
-                <!-- Task items will be added here -->
+            <div class="task-grid" id="task-grid">
+                <!-- Invisible grid for layout -->
+                <div class="grid-row" id="Monday"></div>
+                <div class="grid-row" id="Tuesday"></div>
+                <div class="grid-row" id="Wednesday"></div>
+                <div class="grid-row" id="Thursday"></div>
+                <div class="grid-row" id="Friday"></div>
             </div>
         </div>
     </div>
