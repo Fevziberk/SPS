@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (userType === "teacher") {
             window.location.href = '/schedule/schedule.html';
         } else if (userType === "student") {
-            window.location.href = '/studentschedule/studentschedule.html';
+            window.location.href = '/schedulestudent/schedulestudent.html';
         }
     });
 });
