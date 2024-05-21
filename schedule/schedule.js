@@ -5,10 +5,11 @@ function addTask() {
     const startHour = document.getElementById('start-hour').value;
     const endHour = document.getElementById('end-hour').value;
     const description = document.getElementById('description').value;
+    const studentName = document.getElementById('student-name').value;
     const color = document.getElementById('color').value;
     const dayOfWeek = document.getElementById('day-of-week').value;
 
-    if (!courseName || !startHour || !endHour || !description || !color || !dayOfWeek) {
+    if (!courseName || !startHour || !endHour || !studentName || !description || !color || !dayOfWeek) {
         alert('Please fill out all fields.');
         return;
     }
@@ -18,6 +19,7 @@ function addTask() {
         startHour,
         endHour,
         description,
+        studentName,
         color,
         dayOfWeek
     };
@@ -30,6 +32,7 @@ function addTask() {
     document.getElementById('start-hour').value = '';
     document.getElementById('end-hour').value = '';
     document.getElementById('description').value = '';
+    document.getElementById('student-name').value = '';
     document.getElementById('color').value = '';
     document.getElementById('day-of-week').value = '';
 
@@ -91,6 +94,7 @@ function renderTasks() {
             <h3>${task.courseName}</h3>
             <p>${task.startHour} - ${task.endHour}</p>
             <p>${task.description}</p>
+            <p>${task.studentName}</p>
             <p>${task.dayOfWeek}</p>
         `;
 
