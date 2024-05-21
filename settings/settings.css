@@ -7,10 +7,16 @@
     font-family: "Poppins", sans-serif;
 }
 
-html,body {
+html, body {
+    height: 100%;
     background-color: #f4f4f9;
     color: #333;
     background: linear-gradient(135deg, #acb6e5 0%, #74ebd5 100%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 .top-bar {
@@ -40,9 +46,9 @@ html,body {
     padding: 20px;
     width: 90%;
     max-width: 500px;
-    
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     border-radius: 10px;
+    background-color: white; /* Adding a background color to ensure readability */
 }
 
 .input-fields {

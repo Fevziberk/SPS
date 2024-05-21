@@ -29,17 +29,18 @@ body {
 
 .content {
   display: flex;
+  justify-content: center;
   margin: 20px;
 }
 
 .right-panel {
-  flex: 1;
+  
   padding: 10px;
 }
 
 .task-grid {
   display: flex;
-  flex-direction: column;
+ 
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
@@ -49,6 +50,7 @@ body {
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  margin: 5px;
 }
 
 /* Styles to match the original schedule */
@@ -68,4 +70,13 @@ body {
 /* Additional styles for consistent design */
 .grid-row {
   display: flex;
+}
+
+.container-monday,
+.container-tuesday,
+.container-wednesday,
+.container-thursday,
+.container-friday{
+display: flex;
+flex-direction: column;
 }
