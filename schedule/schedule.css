@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);  margin: 0;
+  background: white;
   padding: 0;
 }
 
@@ -92,4 +92,5 @@ button {
 
 #remove-task-message {
   margin-top: 10px;
+  color: black !important; 
 }
