@@ -53,9 +53,17 @@ button {
   color: white;
 }
 
+.button-AI:hover {
+  background: #388E3C;
+}
+
 .button-add {
   background-color: #4CAF50;
   color: white;
+}
+
+.button-add:hover {
+  background: #388E3C;
 }
 
 .button-edit {
@@ -63,9 +71,17 @@ button {
   color: white;
 }
 
+.button-edit:hover {
+  background: #388E3C;
+}
+
 .button-remove {
   background-color: #f44336;
   color: white;
+}
+
+.button-remove:hover {
+  background: #388E3C;
 }
 
 .add-task-fields {

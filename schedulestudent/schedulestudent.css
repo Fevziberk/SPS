@@ -5,7 +5,6 @@ body {
   background: linear-gradient(135deg, #acb6e5 0%, #74ebd5 100%);
 }
 
-
 .top-bar {
   display: flex;
   width: 100%;
@@ -15,6 +14,7 @@ body {
   padding: 15px;
   text-align: center;
 }
+
 .top-bar h1 {
   font-size: 30px;
   position: absolute;
@@ -32,7 +32,8 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-.button-dashboard:hover{
+
+.button-dashboard:hover {
   background-color: #388E3C;
 }
 
@@ -43,13 +44,11 @@ body {
 }
 
 .right-panel {
-  
   padding: 10px;
 }
 
 .task-grid {
   display: flex;
- 
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
@@ -62,7 +61,6 @@ body {
   margin: 5px;
 }
 
-/* Styles to match the original schedule */
 .task-item h3 {
   margin: 0;
 }
@@ -71,12 +69,6 @@ body {
   margin: 5px 0;
 }
 
-#remove-task-message {
-  margin-top: 10px;
-  color: black !important; 
-}
-
-/* Additional styles for consistent design */
 .grid-row {
   display: flex;
 }
@@ -85,7 +77,13 @@ body {
 .container-tuesday,
 .container-wednesday,
 .container-thursday,
-.container-friday{
-display: flex;
-flex-direction: column;
+.container-friday {
+  display: flex;
+  flex-direction: column;
+}
+
+.completed-tag {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
 }

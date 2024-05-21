@@ -162,3 +162,4 @@ document.querySelector('.button-remove').addEventListener('click', enableRemoveM
 
 // Render tasks on page load
 document.addEventListener('DOMContentLoaded', renderTasks);
+
