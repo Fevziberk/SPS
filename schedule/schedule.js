@@ -1,4 +1,32 @@
-let tasks = [];
+let tasks = [
+    {
+        courseName: "Seng214",
+        startHour: "09:00",
+        endHour: "10:00",
+        description: "Project Mock-up",
+        studentName: "Volkan Sarı",
+        color: "#FF5733",
+        dayOfWeek: "Monday"
+    },
+    {
+        courseName: "Seng214",
+        startHour: "10:00",
+        endHour: "11:00",
+        description: "Project Mock-up",
+        studentName: "Fevzi Berk Çeliktaş",
+        color: "#33FF57",
+        dayOfWeek: "Tuesday"
+    },
+    {
+        courseName: "Seng214",
+        startHour: "11:00",
+        endHour: "12:00",
+        description: "Project Mock-up",
+        studentName: "Onat Ilgaz Keser",
+        color: "#3357FF",
+        dayOfWeek: "Wednesday"
+    }
+];
 
 function addTask() {
     const courseName = document.getElementById('course-name').value;
@@ -131,3 +159,6 @@ document.body.insertAdjacentHTML('beforeend', '<div id="remove-task-message" sty
 document.getElementById('remove-task-message').style.display = 'none';
 
 document.querySelector('.button-remove').addEventListener('click', enableRemoveMode);
+
+// Render tasks on page load
+document.addEventListener('DOMContentLoaded', renderTasks);
