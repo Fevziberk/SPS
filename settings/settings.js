@@ -45,5 +45,5 @@ function changeMail() {
     alert("Email changed successfully!");
 }
 function sendNotification() {
-    alert("Notification sent!");
+    alert("StudentPlanningSystem_IT@gmail.com");
 }
