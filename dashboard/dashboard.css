@@ -61,6 +61,8 @@ body {
 
 .container1 {
   position: relative;
+  display:flex;
+  flex-direction: column;
   width: 90%;
   max-width: 800px;
   margin-right: 3rem;
@@ -73,10 +75,12 @@ body {
 
 .container2 {
   position: relative;
-  display :flex;
+  display:flex;
   flex-direction: column;
   width: 90%;
   max-width: 800px;
+  margin-right: 3rem;
+  height: 500px;
   padding: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -95,6 +99,16 @@ button {
   margin: 10px;
   flex: 1 1 40%;
   transition: background 0.3s ease;
+}
+.messages-button,
+.schedule-button{
+  margin-left: 230px;
+  width: 180px;
+  height: 60px;
+  max-width: 180px;
+  max-height: 60px;
+  max-width: 100%;
+  height: auto;
 }
 
 button:hover {
@@ -119,6 +133,12 @@ button:hover {
 }
 
 .messages-image {
-  width: 400px;
+  width: 650px;
+  height: 500px;
+  
+}
+
+.schedule-image{
+  width: 650px;
   height: 400px;
 }
