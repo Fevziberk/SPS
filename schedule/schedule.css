@@ -1,4 +1,4 @@
-body {
+html, body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #acb6e5 0%, #74ebd5 100%);
   padding: 0;
@@ -46,6 +46,11 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.button-AI{
+  background-color: #6495ED;
+  color: white;
 }
 
 .button-add {
