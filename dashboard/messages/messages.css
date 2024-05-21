@@ -11,11 +11,15 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: white;
     padding: 10px 20px;
+
 }
 
 .top-bar h1 {
-    margin-left: 20px;
     font-size: 24px;
+    margin: 0; /* Remove default margin */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .dashboard-button {
@@ -42,7 +46,7 @@ body {
     margin-bottom: 10px;
     margin-top: 40px;
     overflow-y: auto;
-    height: 300px;
+    height: 500px;
     background-color: #ffffff; /* White background for the chat area to enhance readability */
 }
 

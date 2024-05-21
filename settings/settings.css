@@ -20,12 +20,15 @@ body {
 }
 
 .top-bar {
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: white;
+    align-items: center;
     padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    color: white;
+    position: relative; /* Ensure relative positioning for absolute elements */
 }
 
 .button-dashboard {
@@ -38,6 +41,14 @@ body {
     cursor: pointer;
 }
 
+.top-bar h1 {
+    font-size: 24px;
+    margin: 0; /* Remove default margin */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .settings-box {
     display: flex;
     flex-direction: column;
@@ -48,7 +59,7 @@ body {
     max-width: 500px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     border-radius: 10px;
-    background-color: white; /* Adding a background color to ensure readability */
+    /* Adding a background color to ensure readability */
 }
 
 .input-fields {
@@ -90,7 +101,7 @@ body {
 
 .contact-us-box:hover,
 .button-submit:hover,
-.button-changeUsername:hover, 
+.button-changeUsername:hover,
 .button-changePassword:hover,
 .button-changeMail:hover,
 .button-dashboard:hover {
