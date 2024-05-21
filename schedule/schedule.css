@@ -7,11 +7,22 @@ body {
 
 .top-bar {
   display: flex;
+  width: 100%;
+  height: 75px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: white;
   padding: 15px;
   text-align: center;
 }
+
+.top-bar h1 {
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
 .content {
   display: flex;
   margin: 20px;
